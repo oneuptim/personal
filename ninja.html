@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <title>JQuery Practice</title>
+        <meta name="description" content="Magic Ninja | JQuery Practice!">
+        <link rel="stylesheet" href="ninja.css">
+    </head>
+        <body>
+            <script type="text/javascript">
+            $(document).ready(function(){
+
+                $("img").click(function(){
+                    $(this).hide(1000);
+                });
+                // Add Hide Function
+
+                $("#resetBtn").click(function(){
+                    $("img").show(1000);
+                });
+                // Add Show Function
+            });
+
+            </script>
+
+            <div class="wrapper">
+                <h1>Disappearing Ninja | Coding Dojo</h1>
+                <hr />
+                <!-- End of Clicker -->
+                <div class="container">
+                    <img src="ninja.png" alt="CD Ninja" id="ninja-magic-1" />
+                    <img src="ninja.png" alt="CD Ninja" id="ninja-magic-2" />
+                    <img src="ninja.png" alt="CD Ninja" id="ninja-magic-3" />
+                    <img src="ninja.png" alt="CD Ninja" id="ninja-magic-4" />
+                    <!-- <button type="button" name="button" id="ninja-addClass">Add Class!</button> -->
+                </div>
+                <hr />
+                <!-- End of AddClass -->
+                <div class="container">
+                    <img src="ninja.png" alt="CD Ninja" id="ninja-magic-5" />
+                    <img src="ninja.png" alt="CD Ninja" id="ninja-magic-6" />
+                    <img src="ninja.png" alt="CD Ninja" id="ninja-magic-7" />
+                    <img src="ninja.png" alt="CD Ninja" id="ninja-magic-8" />
+                    <!-- <button type="button" name="button" id="ninja-addClass">Add Class!</button> -->
+                </div>
+                <hr />
+                <button type="button" name="button" id="resetBtn">Reset this B*&^H!</button>
+                <!-- End of AddClass -->
+            </div>
+            <!-- End of wrapper -->
+        </body>
+</html>
